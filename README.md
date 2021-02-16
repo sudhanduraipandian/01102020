@@ -17,16 +17,16 @@ This is the actual STEP 1 in the process. Select the image "WordPress Certified 
 Click on "Continue" to select the type of instance required. *t2.micro* is eligible for free tire which includes 1 virutal CPU unit, 1 GiB memory. This type of instance can be used only with a EBS storage volume, suitable for moderate network performance and supports IPv6.
 
 ### Step 6:
-After selecting the instance type we can skip all other steps and choose to review and launch the instance at any moment or Click on "Next:Configure Instance Details" to configure the Number of instances, Network, IAM role, etc,. 
+After selecting the instance type we can skip all other steps and choose to review and launch the instance at any moment or Click on "Next:Configure Instance Details" to configure the Number of instances, Network, IAM role, CPU specifications, Monitoring, etc,. But certain fatures such as, enabling cloudflar monitoring, choosing a dedicated tenancy, etc,. may incurr additional charges.
 
 ### Step 7:
-On the next step, we can add a storage for the instance where we can choose the type of volume and storage size. Also we can choose to keep or delete the volume when the instance is terminated.
+On the next step, we can add a storage for the instance where we can choose the type of volume and storage size. Also we can choose to keep or delete the volume when the instance is terminated. We can choose the volume types based on our requirement. For example, General Purpose SSD volume have a fixed IOPs, On provisioned IOPs SSD we can set our maximum IOPs required. 
 
 ### Step 8:
 Next step is to add tags to the instance which is used to identify the instance. Eg- Name. A maximum of 50 tags can be added to a EC2 instance.
 
 ### step 9:
-Now we must add a security group to the instance. We can create a new one or select one from the available list if there is any. While creating a new security group, we can add rules for the type of access we provide to the instance such as SSH, HTTP, HTTPS, etc., and define a protocol, Port, and source each type.
+Now we must add a security group to the instance. We can create a new one or select one from the available list if there is any. While creating a new security group, we can add rules for the type of access we provide to the instance such as SSH, HTTP, HTTPS, etc., and define a protocol, Port, and source each type. Rules with source of 0.0.0.0/0 allows all IP addresses to access your instance. Security group rules Must be set to allow access from known IP addresses only to avoid unauthorized access to the instance.
 
 ### Step 10:
 On clicking the "Review and Launch" button we can Review AMI details, Instance type, Security groups, Instance details, Storage volumes and Tags. If there is any changes to be made, we can go back to the particular stage and do the changes before launching the instance.
