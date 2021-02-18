@@ -32,6 +32,9 @@ Now we must add a security group to the instance. We can create a new one or sel
 On clicking the "Review and Launch" button we can Review AMI details, Instance type, Security groups, Instance details, Storage volumes and Tags. If there is any changes to be made, we can go back to the particular stage and do the changes before launching the instance.
 
 ### Step 11:
+Once the instance is launched, we can SSH into it on AWS cli. To visit the web page, we can use the public IP of the instance or we can attach a domain name and use it.
+
+### Step 12:
 Once all the review is done, Click on "Launch". There will be pop-up where we can selece an existing key pair or create a new one or launch the instance without a key pair. A key pair consists of a public key that AWS stores, and a private key file that you store. Together, they allow you to connect to your instance securely. For Windows AMIs, the private key file is required to obtain the password used to log into your instance. For Linux AMIs, the private key file allows you to securely SSH into your instance. The selected key pair will be added to the set of keys authorized for this instance. To create a new Key pair, just enter the name of the keypair and download the .pem file. You have to download the private key file (.pem file) before you can continue. Store it in a secure and accessible location. You will not be able to download the file again after it's created Key pairs can also be added or removed after launching the instance.
 
 ### *We can find our instance on the list of running instances from the EC2 dashboard.*
